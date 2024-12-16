@@ -1,7 +1,7 @@
 # NI-SGCN: Noise-Injected Spiking Graph Convolution for Energy-Efficient 3D Point Cloud Denoising (AAAI‘25)
 We design noise-injected spiking graph convolutional networks (NI-SGCN) for 3D point cloud denoising, which is based on an ANN-based denoising architecture, ScoreDenoise. The NI-SGCN consists of two main parts: the spiking feature extraction module and the score estimation module.
 
-![overview](\overview.png)
+![overview](./overview.png)
 
 Consequently, we propose two implementations of NI-SGCN: the first is a hybrid architecture, NI-HSGCN, witch employs the above spiking feature extraction module and the ANN-based score estimation module; the second is NI-PSGCN, a purely SNN-based structure, which fully leverages the enhanced energy efficiency of SNNs.
 
