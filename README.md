@@ -78,10 +78,13 @@ bash seq_test_IF_T4.sh
 If you find this repo useful, please consider citing:
 
 ```
-@article{li2025noise,
+@inproceedings{li2025noise,
   title={Noise-Injected Spiking Graph Convolution for Energy-Efficient 3D Point Cloud Denoising},
   author={Li, Zikuan and Wu, Qiaoyun and Zhang, Jialin and Zhang, Kaijun and Wang, Jun},
-  journal={arXiv preprint arXiv:2502.19660},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={17},
+  pages={18629--18637},
   year={2025}
 }
 ```
