@@ -79,7 +79,9 @@ for k, v in vars(args).items():
 # Model
 ckpt = torch.load(args.ckpt, map_location=args.device)
 model = DenoiseNet_snn_Noisy(ckpt['args']).to(args.device)
-functional.set_step_mode(model, step_mode='m')
+if args.T != 1:
+    functional.set_step_mode(model, step_mode='m')
+
 functional.set_backend(model, backend='cupy', instance=NIIFNode)
 model.load_state_dict(ckpt['state_dict'])
 

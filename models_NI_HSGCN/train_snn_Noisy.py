@@ -122,7 +122,8 @@ train_iter = get_data_iterator(DataLoader(train_dset, batch_size=args.train_batc
 # Model
 logger.info('Building model...')
 model = DenoiseNet_snn_Noisy(args).to(args.device)
-functional.set_step_mode(model, step_mode='m')
+if args.T != 1:
+    functional.set_step_mode(model, step_mode='m')
 # functional.set_backend(model, backend='cupy', instance=NIIFNode)   
 logger.info(repr(model))
 
