@@ -8,7 +8,7 @@ from torch_cluster import fps
 from spikingjelly.activation_based import neuron, functional, surrogate
 from spikingjelly.activation_based import layer as spiking_layer
 
-from .NIIFNode import NIIFNode
+from models_NI_PSGCN.NIIFNode import NIIFNode
 
 class FCLayer(torch.nn.Module):
 
